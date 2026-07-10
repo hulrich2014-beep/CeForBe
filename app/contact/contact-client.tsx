@@ -6,11 +6,19 @@ import { useTranslation } from '@/hooks/use-translation';
 import { useInView } from 'react-intersection-observer';
 import { ContactForm } from '@/components/contact-form';
 
+type ContactLine = { text: string; href?: string };
+
+interface ContactInfoItem {
+  icon: typeof MapPin;
+  title: string;
+  content: ContactLine[];
+}
+
 export function ContactClient() {
   const { t } = useTranslation();
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
-  const contactInfo = [
+  const contactInfo: ContactInfoItem[] = [
     {
       icon: MapPin,
       title: t?.contact?.address ?? 'Adresse',
