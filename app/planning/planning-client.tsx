@@ -103,9 +103,9 @@ export function PlanningClient() {
   ];
 
   return (
-    <div className="min-h-screen py-12 sm:py-16 lg:py-20">
+    <div className="min-h-screen py-8 sm:py-12 lg:py-16">
       {/* Header */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10 sm:mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-6 sm:mb-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -121,7 +121,7 @@ export function PlanningClient() {
       </div>
 
       {/* Graduation Highlight */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 sm:mb-16">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 sm:mb-10">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -171,7 +171,7 @@ export function PlanningClient() {
       </section>
 
       {/* CTA */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 sm:mt-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 sm:mt-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}

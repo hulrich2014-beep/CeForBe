@@ -2,7 +2,7 @@
 
 import { useTranslation } from '@/hooks/use-translation';
 
-const WHATSAPP_NUMBER = '2290195402638';
+const WHATSAPP_NUMBER = '2290196003981';
 
 export function WhatsAppButton() {
   const { locale } = useTranslation();

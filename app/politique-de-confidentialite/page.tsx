@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 
 export default function PolitiqueConfidentialitePage() {
   return (
-    <div className="min-h-screen py-12 sm:py-16 lg:py-20">
+    <div className="min-h-screen py-8 sm:py-12 lg:py-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl sm:text-4xl font-bold text-blue-900 mb-8 sm:mb-12">
+        <h1 className="text-3xl sm:text-4xl font-bold text-blue-900 mb-5 sm:mb-8">
           Politique de confidentialité
         </h1>
 

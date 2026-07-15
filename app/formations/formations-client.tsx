@@ -57,9 +57,9 @@ export function FormationsClient() {
   ];
 
   return (
-    <div className="min-h-screen py-12 sm:py-16 lg:py-20">
+    <div className="min-h-screen py-8 sm:py-12 lg:py-16">
       {/* Header */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10 sm:mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-6 sm:mb-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -75,7 +75,7 @@ export function FormationsClient() {
       </div>
 
       {/* CFBP/FBRE Section */}
-      <section id="cfbp" ref={cfbpRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 sm:mb-20 scroll-mt-24">
+      <section id="cfbp" ref={cfbpRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-5 sm:mb-8 scroll-mt-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={cfbpInView ? { opacity: 1, y: 0 } : {}}
@@ -152,7 +152,7 @@ export function FormationsClient() {
       </section>
 
       {/* TELEO University Section */}
-      <section id="teleo" ref={teleoRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 sm:mb-20 scroll-mt-24">
+      <section id="teleo" ref={teleoRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-5 sm:mb-8 scroll-mt-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={teleoInView ? { opacity: 1, y: 0 } : {}}
@@ -249,7 +249,7 @@ export function FormationsClient() {
       </section>
 
       {/* MFB-A-P Section */}
-      <section id="mfbap" ref={mfbapRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 sm:mb-20 scroll-mt-24">
+      <section id="mfbap" ref={mfbapRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-5 sm:mb-8 scroll-mt-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={mfbapInView ? { opacity: 1, y: 0 } : {}}

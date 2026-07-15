@@ -10,7 +10,7 @@ export function Footer() {
 
   return (
     <footer className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About */}
           <div>
@@ -20,26 +20,29 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Links — disposés sur 2 colonnes */}
           <div>
             <h3 className="text-xl font-bold mb-4">Navigation</h3>
-            <nav className="space-y-2" aria-label="Navigation de pied de page">
-              <Link href="/" className="block text-blue-100 hover:text-white transition-colors text-sm">
+            <nav
+              className="grid grid-flow-col grid-rows-3 gap-x-6 gap-y-2"
+              aria-label="Navigation de pied de page"
+            >
+              <Link href="/" className="text-blue-100 hover:text-white transition-colors text-sm">
                 {t?.nav?.home ?? 'Accueil'}
               </Link>
-              <Link href="/formations" className="block text-blue-100 hover:text-white transition-colors text-sm">
+              <Link href="/formations" className="text-blue-100 hover:text-white transition-colors text-sm">
                 {t?.nav?.formations ?? 'Formations'}
               </Link>
-              <Link href="/planning" className="block text-blue-100 hover:text-white transition-colors text-sm">
+              <Link href="/planning" className="text-blue-100 hover:text-white transition-colors text-sm">
                 {t?.nav?.planning ?? 'Planning 2026'}
               </Link>
-              <Link href="/contact" className="block text-blue-100 hover:text-white transition-colors text-sm">
+              <Link href="/contact" className="text-blue-100 hover:text-white transition-colors text-sm">
                 {t?.nav?.contact ?? 'Contact'}
               </Link>
-              <Link href="/mentions-legales" className="block text-blue-100 hover:text-white transition-colors text-sm">
+              <Link href="/mentions-legales" className="text-blue-100 hover:text-white transition-colors text-sm">
                 {locale === 'en' ? 'Legal notice' : 'Mentions légales'}
               </Link>
-              <Link href="/politique-de-confidentialite" className="block text-blue-100 hover:text-white transition-colors text-sm">
+              <Link href="/politique-de-confidentialite" className="text-blue-100 hover:text-white transition-colors text-sm">
                 {locale === 'en' ? 'Privacy policy' : 'Politique de confidentialité'}
               </Link>
             </nav>
@@ -57,8 +60,8 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="flex-shrink-0" aria-hidden="true" />
-                <a href="tel:+2290195402638" className="text-blue-100 hover:text-white transition-colors">
-                  +229 01 95 40 26 38
+                <a href="tel:+2290196003981" className="text-blue-100 hover:text-white transition-colors">
+                  +229 01 96 00 39 81
                 </a>
               </div>
               <div className="flex items-start space-x-3">
@@ -75,7 +78,7 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-blue-700 text-center">
+        <div className="mt-10 pt-8 border-t border-blue-700 text-center">
           <p className="text-sm text-blue-200">
             © {currentYear} Centre de Formation Biblique Esdras (CeForBE). {t?.footer?.rights ?? 'Tous droits réservés'}.
           </p>

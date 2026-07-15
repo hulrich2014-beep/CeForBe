@@ -42,9 +42,9 @@ export function AProposClient() {
   ];
 
   return (
-    <div className="min-h-screen py-12 sm:py-16 lg:py-20">
+    <div className="min-h-screen py-8 sm:py-12 lg:py-16">
       {/* Header */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10 sm:mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-6 sm:mb-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,8 +60,8 @@ export function AProposClient() {
       </div>
 
       {/* Leadership */}
-      <section ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 sm:mb-20">
-        <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 text-center mb-8 sm:mb-12">
+      <section ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-5 sm:mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 text-center mb-5 sm:mb-8">
           {t?.about?.leadership ?? 'Direction du Centre'}
         </h2>
 
@@ -89,8 +89,8 @@ export function AProposClient() {
       </section>
 
       {/* CFBP Team */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 sm:mb-20">
-        <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 text-center mb-8 sm:mb-12">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-5 sm:mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 text-center mb-5 sm:mb-8">
           {t?.about?.cfbpTeam ?? 'Équipe CFBP/FBRE'}
         </h2>
 
@@ -114,8 +114,8 @@ export function AProposClient() {
       </section>
 
       {/* MFB-AP Team */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 sm:mb-20">
-        <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 text-center mb-8 sm:mb-12">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-5 sm:mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 text-center mb-5 sm:mb-8">
           {t?.about?.mfbapTeam ?? 'Équipe MFB-AP'}
         </h2>
 
@@ -139,8 +139,8 @@ export function AProposClient() {
       </section>
 
       {/* Infrastructure */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 sm:mb-20">
-        <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 text-center mb-8 sm:mb-12">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-5 sm:mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 text-center mb-5 sm:mb-8">
           {t?.about?.infrastructure ?? 'Infrastructure'}
         </h2>
 
@@ -183,9 +183,6 @@ export function AProposClient() {
               <Phone size={24} className="flex-shrink-0 mt-1" aria-hidden="true" />
               <div>
                 <h3 className="font-bold mb-2">Contact</h3>
-                <a href="tel:+2290195402638" className="block text-blue-100 hover:text-white transition-colors">
-                  +229 01 95 40 26 38
-                </a>
                 <a href="tel:+2290196003981" className="block text-blue-100 hover:text-white transition-colors">
                   +229 01 96 00 39 81
                 </a>

@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 export default function MentionsLegalesPage() {
   return (
-    <div className="min-h-screen py-12 sm:py-16 lg:py-20">
+    <div className="min-h-screen py-8 sm:py-12 lg:py-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl sm:text-4xl font-bold text-blue-900 mb-8 sm:mb-12">
+        <h1 className="text-3xl sm:text-4xl font-bold text-blue-900 mb-5 sm:mb-8">
           Mentions légales
         </h1>
 
@@ -28,8 +28,8 @@ export default function MentionsLegalesPage() {
               4ème VONS à droite après le marché Sèkandji, Commune de Sèmé-Podji
               <br />
               Téléphone :{' '}
-              <a href="tel:+2290195402638" className="text-blue-900 underline">
-                +229 01 95 40 26 38
+              <a href="tel:+2290196003981" className="text-blue-900 underline">
+                +229 01 96 00 39 81
               </a>
               <br />
               E-mail :{' '}

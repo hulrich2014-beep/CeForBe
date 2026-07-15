@@ -50,7 +50,7 @@ const organizationJsonLd = {
   url: siteUrl,
   logo: `${siteUrl}/logo.png`,
   email: 'contact@ceforbe.com',
-  telephone: '+2290195402638',
+  telephone: '+2290196003981',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Sèkandji, 4ème VONS après le marché',

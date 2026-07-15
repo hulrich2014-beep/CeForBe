@@ -31,7 +31,6 @@ export function ContactClient() {
       icon: Phone,
       title: t?.contact?.phone1 ?? 'Téléphone',
       content: [
-        { text: '+229 01 95 40 26 38', href: 'tel:+2290195402638' },
         { text: '+229 01 96 00 39 81', href: 'tel:+2290196003981' },
       ],
     },
@@ -53,9 +52,9 @@ export function ContactClient() {
   ];
 
   return (
-    <div className="min-h-screen py-12 sm:py-16 lg:py-20">
+    <div className="min-h-screen py-8 sm:py-12 lg:py-16">
       {/* Header */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10 sm:mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-6 sm:mb-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

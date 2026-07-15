@@ -54,7 +54,7 @@ export function HomeClient() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section ref={heroRef} className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-14 sm:py-20 overflow-hidden">
+      <section ref={heroRef} className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-10 sm:py-14 overflow-hidden">
         <div className="absolute inset-0 opacity-10" aria-hidden="true">
           <div className="absolute inset-0 bg-[url('/logo.png')] bg-center bg-no-repeat bg-contain"></div>
         </div>
@@ -92,9 +92,9 @@ export function HomeClient() {
       </section>
 
       {/* Mission & Vision */}
-      <section ref={missionRef} className="py-12 sm:py-16 lg:py-20 bg-white">
+      <section ref={missionRef} className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={missionInView ? { opacity: 1, x: 0 } : {}}
@@ -129,13 +129,13 @@ export function HomeClient() {
       </section>
 
       {/* Three Entities */}
-      <section ref={entitiesRef} className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section ref={entitiesRef} className="py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={entitiesInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-center mb-8 sm:mb-12">
+            className="text-center mb-5 sm:mb-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-900 mb-4">
               {t?.home?.threeEntities ?? 'Trois Entités de Formation'}
             </h2>
@@ -157,7 +157,7 @@ export function HomeClient() {
                     <h3 className="text-lg sm:text-xl font-bold text-blue-900 mb-4 group-hover:text-amber-600 transition-colors">
                       {entity?.title ?? ''}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed mb-4">{entity?.desc ?? ''}</p>
+                    <p className="text-gray-600 leading-relaxed mb-4 whitespace-pre-line">{entity?.desc ?? ''}</p>
                     <div className="flex items-center text-blue-900 font-semibold group-hover:text-amber-600 transition-colors">
                       <span>{t?.home?.learnMore ?? 'En savoir plus'}</span>
                       <ChevronRight size={20} className="ml-1 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
@@ -171,9 +171,9 @@ export function HomeClient() {
       </section>
 
       {/* Infrastructure */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
+      <section className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 sm:mb-12">
+          <div className="text-center mb-5 sm:mb-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-900 mb-4">
               {t?.home?.infrastructure ?? 'Infrastructure Moderne'}
             </h2>
@@ -193,13 +193,13 @@ export function HomeClient() {
       </section>
 
       {/* Photo Gallery */}
-      <section ref={galleryRef} className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-amber-50">
+      <section ref={galleryRef} className="py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-gray-50 to-amber-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={galleryInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-center mb-8 sm:mb-12"
+            className="text-center mb-5 sm:mb-8"
           >
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-900 mb-4">
               {t?.home?.gallery ?? 'Galerie Photos'}
@@ -230,7 +230,7 @@ export function HomeClient() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+      <section className="py-8 sm:py-12 lg:py-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">
             {t?.home?.ctaTitle ?? 'Inscrivez-vous dès aujourd\'hui'}

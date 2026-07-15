@@ -84,8 +84,8 @@ export async function POST(request: NextRequest) {
             : 'CeForBE — Votre inscription a bien été reçue',
         text:
           data.langue === 'en'
-            ? `Hello ${data.prenom},\n\nWe have received your registration for: ${formationLabel}.\nOur team will contact you shortly to confirm the next steps.\n\nCentre de Formation Biblique Esdras (CeForBE)\nSèkandji, Sèmé-Podji, Bénin\nTel/WhatsApp: +229 01 95 40 26 38`
-            : `Bonjour ${data.prenom},\n\nNous avons bien reçu votre inscription pour : ${formationLabel}.\nNotre équipe vous contactera prochainement pour confirmer les prochaines étapes.\n\nCentre de Formation Biblique Esdras (CeForBE)\nSèkandji, Sèmé-Podji, Bénin\nTél/WhatsApp : +229 01 95 40 26 38`,
+            ? `Hello ${data.prenom},\n\nWe have received your registration for: ${formationLabel}.\nOur team will contact you shortly to confirm the next steps.\n\nCentre de Formation Biblique Esdras (CeForBE)\nSèkandji, Sèmé-Podji, Bénin\nPhone: +229 01 96 00 39 81`
+            : `Bonjour ${data.prenom},\n\nNous avons bien reçu votre inscription pour : ${formationLabel}.\nNotre équipe vous contactera prochainement pour confirmer les prochaines étapes.\n\nCentre de Formation Biblique Esdras (CeForBE)\nSèkandji, Sèmé-Podji, Bénin\nTél : +229 01 96 00 39 81`,
       });
     } catch (mailError) {
       console.error("[inscription] Échec d'envoi e-mail :", mailError);
