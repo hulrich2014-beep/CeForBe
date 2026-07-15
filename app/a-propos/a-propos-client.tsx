@@ -30,6 +30,13 @@ export function AProposClient() {
     { role: t?.about?.treasurerAdj ?? 'Trésorier Général Adjoint', name: 'AHLONSOU Madeleine' },
   ];
 
+  const teleoTeam = [
+    { role: t?.about?.doctor ?? 'Docteur', name: 'HOUNGBEME Augustin' },
+    { role: t?.about?.doctor ?? 'Docteur', name: 'ADJAÏ Hugues' },
+    { role: t?.about?.doctor ?? 'Docteur', name: 'HOUEMAGNON Michel' },
+    { role: t?.about?.doctor ?? 'Docteur', name: 'AWELE Avérin' },
+  ];
+
   const infrastructure = [
     { icon: Building2, text: t?.about?.infra1 ?? 'Secrétariat' },
     { icon: Building2, text: t?.about?.infra2 ?? 'Bureau CFBP/FBRE' },
@@ -132,6 +139,31 @@ export function AProposClient() {
                 <User className="text-amber-900" size={24} aria-hidden="true" />
               </div>
               <p className="text-amber-700 text-sm font-semibold mb-2">{member?.role ?? ''}</p>
+              <h3 className="text-gray-800 font-bold">{member?.name ?? ''}</h3>
+            </motion.div>
+          )) ?? null}
+        </div>
+      </section>
+
+      {/* T-Net / TELEO University Team */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-5 sm:mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 text-center mb-5 sm:mb-8">
+          {t?.about?.teleoTeam ?? 'Responsables de T-Net International / TELEO University'}
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          {teleoTeam?.map?.((member, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={inView ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow text-center"
+            >
+              <div className="bg-emerald-200 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <User className="text-emerald-900" size={28} aria-hidden="true" />
+              </div>
+              <p className="text-emerald-700 text-sm font-semibold mb-2">{member?.role ?? ''}</p>
               <h3 className="text-gray-800 font-bold">{member?.name ?? ''}</h3>
             </motion.div>
           )) ?? null}
