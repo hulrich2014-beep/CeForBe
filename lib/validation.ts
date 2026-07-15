@@ -28,12 +28,29 @@ export const FORMATIONS_VALIDES = [
   'mfbap',
 ] as const;
 
+// Les 12 départements de la République du Bénin.
+export const DEPARTEMENTS_BENIN = [
+  'Alibori',
+  'Atacora',
+  'Atlantique',
+  'Borgou',
+  'Collines',
+  'Couffo',
+  'Donga',
+  'Littoral',
+  'Mono',
+  'Ouémé',
+  'Plateau',
+  'Zou',
+] as const;
+
 export const inscriptionSchema = z.object({
   prenom: z.string().trim().min(2).max(120),
   nom: z.string().trim().min(2).max(120),
   email: emailField,
   telephone: phoneField,
   formation: z.enum(FORMATIONS_VALIDES),
+  localite: z.enum(DEPARTEMENTS_BENIN),
   message: z.string().trim().max(5000).optional().or(z.literal('')),
   langue: z.enum(['fr', 'en']).default('fr'),
   consentement: z.literal(true),

@@ -15,6 +15,7 @@ model Inscription {
   email            String
   telephone        String
   formation        String
+  localite         String?
   message          String?  @db.Text
   date_inscription DateTime @default(now())
   langue           String   @default("fr")

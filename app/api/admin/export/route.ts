@@ -66,7 +66,7 @@ export async function GET(request: NextRequest) {
         orderBy: { date_inscription: 'desc' },
       });
       csv = toCsv(
-        ['Date', 'Nom', 'Prénom', 'Email', 'Téléphone', 'Formation', 'Langue', 'Message'],
+        ['Date', 'Nom', 'Prénom', 'Email', 'Téléphone', 'Formation', 'Localité', 'Langue', 'Message'],
         inscriptions.map((i) => [
           i.date_inscription.toISOString(),
           i.nom,
@@ -74,6 +74,7 @@ export async function GET(request: NextRequest) {
           i.email,
           i.telephone,
           i.formation,
+          i.localite,
           i.langue,
           i.message,
         ])

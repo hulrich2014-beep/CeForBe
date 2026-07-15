@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Send, CheckCircle, AlertCircle } from 'lucide-react';
 import { useTranslation } from '@/hooks/use-translation';
+import { DEPARTEMENTS_BENIN } from '@/lib/validation';
 
 export function InscriptionForm() {
   const { t, locale } = useTranslation();
@@ -13,6 +14,7 @@ export function InscriptionForm() {
     email: '',
     telephone: '',
     formation: '',
+    localite: '',
     message: '',
     website: '', // honeypot anti-robots : doit rester vide
   });
@@ -46,6 +48,7 @@ export function InscriptionForm() {
           email: '',
           telephone: '',
           formation: '',
+          localite: '',
           message: '',
           website: '',
         });
@@ -190,6 +193,27 @@ export function InscriptionForm() {
             {formations?.map?.((f) => (
               <option key={f?.value ?? ''} value={f?.value ?? ''}>
                 {f?.label ?? ''}
+              </option>
+            )) ?? null}
+          </select>
+        </div>
+
+        <div>
+          <label htmlFor="inscription-localite" className="block text-sm font-medium text-gray-700 mb-2">
+            {t?.inscription?.localite ?? 'Localité (département)'} *
+          </label>
+          <select
+            id="inscription-localite"
+            name="localite"
+            required
+            value={formData?.localite ?? ''}
+            onChange={(e) => setFormData({ ...formData, localite: e?.target?.value ?? '' })}
+            className={`${inputClass} bg-white`}
+          >
+            <option value="">{t?.inscription?.selectLocalite ?? 'Sélectionnez votre département'}</option>
+            {DEPARTEMENTS_BENIN?.map?.((dep) => (
+              <option key={dep} value={dep}>
+                {dep}
               </option>
             )) ?? null}
           </select>

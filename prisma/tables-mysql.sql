@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS `inscriptions` (
   `email` VARCHAR(191) NOT NULL,
   `telephone` VARCHAR(191) NOT NULL,
   `formation` VARCHAR(191) NOT NULL,
+  `localite` VARCHAR(191) NULL,
   `message` TEXT NULL,
   `date_inscription` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
   `langue` VARCHAR(191) NOT NULL DEFAULT 'fr',
