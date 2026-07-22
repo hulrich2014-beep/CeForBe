@@ -24,7 +24,7 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Navigation</h3>
             <nav
-              className="grid grid-flow-col grid-rows-3 gap-x-6 gap-y-2"
+              className="flex flex-col gap-2 sm:grid sm:grid-flow-col sm:grid-rows-3 sm:gap-x-8 sm:gap-y-2 sm:justify-start"
               aria-label="Navigation de pied de page"
             >
               <Link href="/" className="text-blue-100 hover:text-white transition-colors text-sm">
@@ -81,6 +81,9 @@ export function Footer() {
         <div className="mt-10 pt-8 border-t border-blue-700 text-center">
           <p className="text-sm text-blue-200">
             © {currentYear} Centre de Formation Biblique Esdras (CeForBE). {t?.footer?.rights ?? 'Tous droits réservés'}.
+          </p>
+          <p className="mt-2 text-xs text-blue-300">
+            Récépissé d&apos;enregistrement n° 2025/N°1459/MISP/DC/SGM/DAIC/SACC/SA du 31 décembre 2025
           </p>
         </div>
       </div>

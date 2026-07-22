@@ -39,6 +39,9 @@ export default function MentionsLegalesPage() {
               >
                 contact@ceforbe.com
               </a>
+              <br />
+              Enregistré au Ministère de l&apos;Intérieur et de la Sécurité Publique (MISP)
+              sous le récépissé n° 2025/N°1459/MISP/DC/SGM/DAIC/SACC/SA du 31 décembre 2025.
             </p>
           </section>
 
